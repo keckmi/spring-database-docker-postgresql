@@ -12,6 +12,7 @@ public class SpringDatabaseDockerPostgresqlApplication {
 		ConfigurableApplicationContext applicationContext =
 				SpringApplication.run(SpringDatabaseDockerPostgresqlApplication.class, args);
 
+
 		City berlin = new City();
 		berlin.setName("Berlin");
 		berlin.setCapital(true);
