@@ -21,9 +21,15 @@ public class SpringDatabaseDockerPostgresqlApplication {
 		duesseldorf.setCapital(false);
 		duesseldorf.setName("Duesseldorf");
 
+		City winnenden = new City();
+		winnenden.setCapital(false);
+		winnenden.setName("Winnenden");
+
 		CityRepository cityRepository = applicationContext.getBean(CityRepository.class);
 		cityRepository.save(berlin);
 		cityRepository.save(duesseldorf);
+		cityRepository.save(winnenden);
+
 	}
 
 }
